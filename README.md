@@ -29,3 +29,7 @@ A Streamlit-based web application that predicts the risk of cardiovascular disea
 - 
 equirements.txt: Dependencies.
 - README.md: This file.
+
+
+## Live Demo
+Access the deployed app here: [Cardiovascular Disease Predictor](https://cardiovascular-disease-predictor-luwdacpohstdj8vuinmq4t.streamlit.app/)
