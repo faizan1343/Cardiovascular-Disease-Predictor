@@ -1,30 +1,31 @@
-# Cardiovascular-Disease-Predictor
-Cardio Predictor: Streamlit app with tuned XGBoost for heart risk. Includes preprocessing &amp; training. Great for healthcare &amp; data learners!
+# Cardiovascular Disease Predictor
+
+A Streamlit-based web application that predicts the risk of cardiovascular disease using a tuned XGBoost model. Built with Python, this project includes data preprocessing, model training, and evaluation, leveraging datasets like cardio_train.csv. Explore the interactive interface to assess patient risk based on health metrics. Ideal for healthcare enthusiasts and data science learners!
 
 ## Features
 - Predicts cardiovascular disease risk with a tuned XGBoost model.
 - Interactive Streamlit UI for user input and results.
 - Handles preprocessing and feature engineering automatically.
 
-2. Install dependencies:
-3. Ensure the model file `Tuned_XGBoost_balanced.pkl` is in the root directory (download from [link] if not included).
+## Setup
+1. Clone the repository:
+   ``n   git clone https://github.com/faizan1343/Cardiovascular-Disease-Predictor.git
+   cd Cardiovascular-Disease-Predictor
+   ``n2. Install dependencies:
+   ``n   pip install -r requirements.txt
+   ``n3. Ensure the model file files.Cardio/week4_tuned_xgboost_balanced.pkl is in place.
 
 ## Usage
 1. Run the Streamlit app:
-
-2. Enter patient details (age, height, weight, blood pressure, etc.) in the interface.
-3. Click "Predict Health Risk" to see the result (e.g., "No Cardio" with probability).
+   ``n   streamlit run app/appfiles/app.py
+   ``n2. Enter patient details in the interface.
+3. Click Predict Health Risk to see the result.
 
 ## Files
-- `app.py`: Streamlit application with prediction logic.
-- `Tuned_XGBoost_balanced.pkl`: Trained XGBoost model (if <100MB; otherwise, download externally).
-- `requirements.txt`: List of Python dependencies.
-- `Section1.ipynb`, etc.: Jupyter notebooks for data processing and modeling.
-- `README.md`: This file.
-
-## Dataset
-- Source: `cardio_train.csv` (not included; available from Kaggle or similar).
-- Cleaned version: Use `cleaned_cardio_train.csv` if provided.
-
-## Contributing
-Feel free to fork and submit pull requests. Report issues via the Issues tab.
+- app/appfiles/app.py: Streamlit application.
+- files.Cardio/week4_tuned_xgboost_balanced.pkl: Trained model.
+- Notebooks/*.ipynb: Jupyter notebooks for the workflow.
+- predict_cardio.py: Prediction script.
+- 
+equirements.txt: Dependencies.
+- README.md: This file.
