@@ -65,14 +65,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load external CSS files (style.css and custom.css)
-with open("app/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-with open("app/appfiles/custom.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+#with open("app/style.css") as f:
+ #   st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+#with open("app/appfiles/custom.css") as f:
+   # st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Load external JavaScript file (script.js)
-with open("app/script.js") as f:
-    st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
+#with open("app/script.js") as f:
+  # st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
 
 # Header
 st.markdown("""
