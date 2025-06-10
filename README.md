@@ -17,12 +17,12 @@ A Streamlit-based web application that predicts the risk of cardiovascular disea
 
 ## Usage
 1. Run the Streamlit app:
-   ``n   streamlit run app/appfiles/app.py
+   ``n   streamlit run app/app.py
    ``n2. Enter patient details in the interface.
 3. Click Predict Health Risk to see the result.
 
 ## Files
-- app/appfiles/app.py: Streamlit application.
+- app/app.py: Streamlit application.
 - files.Cardio/week4_tuned_xgboost_balanced.pkl: Trained model.
 - Notebooks/*.ipynb: Jupyter notebooks for the workflow.
 - predict_cardio.py: Prediction script.
