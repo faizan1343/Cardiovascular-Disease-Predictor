@@ -64,6 +64,16 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Load external CSS files (style.css and custom.css)
+with open("app/appfiles/style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+with open("app/appfiles/custom.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Load external JavaScript file (script.js)
+with open("app/script.js") as f:
+    st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
+
 # Header
 st.markdown("""
 <div class="main-header">
@@ -76,7 +86,7 @@ st.markdown("""
 # Load the trained model
 @st.cache_resource
 def load_model():
-    model_path = r"C:\Users\Faizan\OneDrive - BENNETT UNIVERSITY\Cardiovascular Disease Proj\files.Cardio\Tuned_XGBoost_balanced.pkl"
+    model_path = "files.Cardio/week4_tuned_xgboost_balanced.pkl"
     try:
         best_model = joblib.load(model_path)
         return best_model, None
