@@ -86,7 +86,7 @@ st.markdown("""
 # Load the trained model
 @st.cache_resource
 def load_model():
-    model_path = "files.Cardio/week4_tuned_xgboost_balanced.pkl"
+    model_path = "files.Cardio/Tuned_XGBoost_balanced.pkl"
     try:
         best_model = joblib.load(model_path)
         return best_model, None
